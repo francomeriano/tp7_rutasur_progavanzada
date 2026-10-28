@@ -1,0 +1,1 @@
+{"name":"@rutasur/notifications","version":"1.0.0","main":"index.js","type":"module","scripts":{"start":"node index.js"},"dependencies":{"dotenv":"^18.0.9","kafkajs":"^2.2.4"}}

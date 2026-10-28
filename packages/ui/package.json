@@ -1,0 +1,19 @@
+{
+  "name": "@rutasur/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "mongoose": "^8.1.1",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rutasur-root": "file:../.."
+  }
+}

@@ -1,0 +1,19 @@
+﻿{
+  "name": "rutasur-root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:projector": "npm --prefix services/projector run start",
+    "start:notifications": "npm --prefix services/notifications run start",
+    "start:rescheduling": "npm --prefix services/rescheduling run start",
+    "start:sla-monitor": "npm --prefix services/sla-monitor run start",
+    "start:analytics": "npm --prefix services/analytics run start",
+    "start:simulator": "npm --prefix services/simulator run start",
+    "start:ui": "npm --prefix packages/ui run dev",
+    "dev:all": "concurrently -n \"PROJ,NOTIF,RESCHED,SLA,ANALYT,SIM,UI\" -c \"blue,yellow,green,cyan,magenta,white,red\" \"npm run start:projector\" \"npm run start:notifications\" \"npm run start:rescheduling\" \"npm run start:sla-monitor\" \"npm run start:analytics\" \"npm run start:simulator\" \"npm run start:ui\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
